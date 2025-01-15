@@ -1,57 +1,65 @@
-<!DOCTYPE html> 
-<html lang="en"> 
-  <head> 
-    <meta charset="UTF-8"> 
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">     
-<title>Survey Form for Space Enthusiasts</title>
-<link rel="stylesheet" href="styles.css"> 
-  </head> 
-  <body> 
-<h1 id="title">Survey Form for Space Enthusiasts</h1>
-  <p id="description" class="description"><em>Help Us Improve Your Space Exploration Journey!</em></p>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form for Space Enthusiasts</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1 id="title">Survey Form for Space Enthusiasts</h1>
+    <p id="description" class="description"><em>Help Us Improve Your Space Exploration Journey!</em></p>
     <form id="survey-form">
-          <fieldset>
-        <label id="name-label" for="name"> Name </label><input id="name" type="text"  placeholder="Enter your name" required/> </label> 
-         <label id="email-label" for="email"> Email <input id="email" type="email" placeholder="Enter your email" required/></label>
-    <label id="number-label" for="number"> Age <input id="number" type="number" min="18" max="60" placeholder="Enter your age"/></label>
-        <label for="description"> 
-     How often do you read or watch content about space? 
-   <select id="dropdown" name="dropdown">
-     <option>Select an option</option>
-     <option>Daily</option>
-    <option>Weekly</option>
-    <option>Monthly</option>
-    <option>Rarely</option>
-        </select> 
-    </label>
-    <p>What type of content do you prefer?<p>
-<label for="content"><input id="content" type="radio" name="content" class="inline" value="content" checked/> Articles and Blogs</label>
-      <label for="content"><input id="content" type="radio" name="content" class="inline" value="content"/> Videos</label>
-      <label for="content"><input id="content" type="radio" name="content" class="inline" value="content"/> Interactive Simulations</label>
-      <label for="content"><input id="content" type="radio" name="content" class="inline" value="content"/> Infographics</label>
-      <label for="content"><input id="content" type="radio" name="content" class="inline" value="content"/> Podcasts</label>
-<label>What draws you to space-related topics? (Choose all that apply)</label>
-      <label for="topics"><input id="topics" type="checkbox" value="topics" class="inline"/> Astronomy</label>
-      <label for="topics"><input id="topics" type="checkbox" value="topics" class="inline"/> Space Exploration Missions</label>
-      <label for="topics"><input id="topics" type="checkbox" value="topics" class="inline"/> Astrophysics</label>
-      <label for="topics"><input id="topics" type="checkbox" value="topics" class="inline"/> Space Technology</label>
-      <label for="topics"><input id="topics" type="checkbox" value="topics" class="inline"/> Theoretical Physics</label>
-      <label for="topics"><input id="topics" type="checkbox" value="topics" class="inline"/> Other (please specify)</label>
-      <label for="description"> 
-     How would you rate the content provided on our platform?
-   <select id="dropdown" name="dropdown">
-     <option>Select an option</option>
-     <option>Excellent</option>
-    <option>Good</option>
-    <option>Average</option>
-    <option>Poor</option>
-    </select> 
-    </label>
-<label for="additional comments"> Any Comments, Suggestions or What specific topics would you like us to cover more? <textarea id="additional comments" name="additional comments" rows="5" cols="40" placeholder="Enter your comment here..."></textarea></label>
-    <input id="submit" type="submit" value="Submit">
-    <p class="thanks">Thank You!</p>
-<p>Your feedback will help us reach new heights. Stay curious, and keep exploring the universe with us!<p>
-    </fieldset>
+        <fieldset>
+            <label id="name-label" for="name">Name</label>
+            <input id="name" type="text" placeholder="Enter your name" required />
+
+            <label id="email-label" for="email">Email</label>
+            <input id="email" type="email" placeholder="Enter your email" required />
+
+            <label id="number-label" for="number">Age</label>
+            <input id="number" type="number" min="18" max="60" placeholder="Enter your age" />
+
+            <label for="frequency">How often do you read or watch content about space?</label>
+            <select id="frequency" name="frequency">
+                <option>Select an option</option>
+                <option>Daily</option>
+                <option>Weekly</option>
+                <option>Monthly</option>
+                <option>Rarely</option>
+            </select>
+
+            <p>What type of content do you prefer?</p>
+            <label><input type="radio" name="content" value="articles" checked /> Articles and Blogs</label>
+            <label><input type="radio" name="content" value="videos" /> Videos</label>
+            <label><input type="radio" name="content" value="simulations" /> Interactive Simulations</label>
+            <label><input type="radio" name="content" value="infographics" /> Infographics</label>
+            <label><input type="radio" name="content" value="podcasts" /> Podcasts</label>
+
+            <p>What draws you to space-related topics? (Choose all that apply)</p>
+            <label><input type="checkbox" name="topics" value="astronomy" /> Astronomy</label>
+            <label><input type="checkbox" name="topics" value="missions" /> Space Exploration Missions</label>
+            <label><input type="checkbox" name="topics" value="astrophysics" /> Astrophysics</label>
+            <label><input type="checkbox" name="topics" value="technology" /> Space Technology</label>
+            <label><input type="checkbox" name="topics" value="theoretical-physics" /> Theoretical Physics</label>
+            <label><input type="checkbox" name="topics" value="other" /> Other (please specify)</label>
+
+            <label for="rating">How would you rate the content provided on our platform?</label>
+            <select id="rating" name="rating">
+                <option>Select an option</option>
+                <option>Excellent</option>
+                <option>Good</option>
+                <option>Average</option>
+                <option>Poor</option>
+            </select>
+
+            <label for="comments">Any Comments, Suggestions, or Specific Topics to Cover?</label>
+            <textarea id="comments" name="comments" rows="5" cols="40" placeholder="Enter your comment here..."></textarea>
+
+            <input id="submit" type="submit" value="Submit">
+        </fieldset>
     </form>
-  </body> 
-</html> 
+    <p class="thanks">Thank You!</p>
+    <p>Your feedback will help us reach new heights. Stay curious, and keep exploring the universe with us!</p>
+</body>
+</html>
